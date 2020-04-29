@@ -4,22 +4,26 @@ This is the back end. To be used in conjunction with React front end: https://gi
 
 Clone repositories:
 
-### mkdir -p game-of-life-demo/backend
-### git clone https://github.com/ChrisMartin-io/gameoflife-backend
 
-### mkdir -p game-of-life-demo/frontend
-### git clone https://github.com/ChrisMartin-io/gameoflife-frontend
+### mkdir game-of-life-demo
+### cd game-of-life-demo
+### git clone https://github.com/ChrisMartin-io/gameoflife-backend.git
+### git clone https://github.com/ChrisMartin-io/gameoflife-frontend.git
 
-Back end set to listen on port 3002. Front end defaults to port 3000. 
+(if you get a 400 error, check for any extra spaces after the pasted URL)
 
-On back end: goto server directory and start server
+On back end: goto server directory, install files and start server
 
-### cd game-of-life-demo/backend
+### cd game-of-life-demo/gameoflife-backend
+### npm install
 ### node server.js
 
-On front end: goto app directory and start app
+On front end: goto app directory, install files and start app
 
 ### cd game-of-life-demo/frontend
+### yarn install 
 ### yarn start
+
+Back end set to listen on port 3002. Front end defaults to port 3000.​
 
 Enjoy!
