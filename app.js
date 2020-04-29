@@ -1,5 +1,3 @@
-/** Simple demo Express app. */
-
 const express = require("express");
 const cors = require('cors');
 const executeGame = require('./executeGame')
@@ -23,12 +21,6 @@ app.post('/', function (req, res) {
   result = executeGame(array)
   return res.send(result)
 })
-
-/** Start server on port 3000 */
-
-app.listen(3000, function() {
-  console.log("Server started on port 3000.");
-});
 
 
 module.exports = app
